@@ -24,6 +24,8 @@ for iter = 1:num_iters
 %theta(1) = temp0
 %theta(2) = temp1
 
+% This is the optimal vectorized version of the one above.  I was almost
+% there ;)
 theta = theta - (alpha/m) * (X' * (X * theta - y));
 
     % ============================================================
